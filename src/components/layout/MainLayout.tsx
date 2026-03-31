@@ -12,7 +12,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
   }, [darkMode]);
 
   return (
-    <div className="flex min-h-screen bg-[#e8edf5] dark:bg-[#0f1629]">
+    <div className="flex h-screen bg-[#e8edf5] dark:bg-[#0f1629] overflow-hidden">
       <Sidebar />
       <div className="flex-1 flex flex-col overflow-hidden">
         <Navbar />

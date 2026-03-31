@@ -16,7 +16,7 @@ export default function Navbar({ onSearch }: { onSearch?: (q: string) => void })
   const [q, setQ] = useState("");
 
   return (
-    <header className="sticky top-0 z-10 h-[60px] px-5 flex items-center justify-between
+    <header className="sticky top-0 z-10 h-[70px] px-6 flex items-center justify-between
       bg-white dark:bg-[#0d2030] border-b-2 border-c3">
       <div>
         <p className="text-[11px] text-gray-400 font-medium">👋 Welcome back, Admin</p>
@@ -27,9 +27,9 @@ export default function Navbar({ onSearch }: { onSearch?: (q: string) => void })
 
       <div className="flex items-center gap-2">
         {/* Search */}
-        <div className={`flex items-center gap-1.5 px-3 py-1.5 bg-c1 border-[1.5px] border-c3
-          rounded-full transition-all duration-200 focus-within:border-c4 focus-within:bg-white
-          focus-within:w-[210px] w-[180px]`}>
+        <div className={`flex items-center gap-1.5 px-4 py-2 bg-c1/50 dark:bg-white/5 border border-c3/40
+          rounded-2xl transition-all duration-500 focus-within:border-c4 focus-within:bg-white focus-within:ring-4 focus-within:ring-c4/10
+          focus-within:w-[240px] w-[200px]`}>
           <Search size={13} className="text-gray-400 shrink-0" />
           <input
             value={q}
@@ -42,24 +42,24 @@ export default function Navbar({ onSearch }: { onSearch?: (q: string) => void })
 
         <button 
           onClick={() => setNotificationOpen(true)}
-          className="w-[38px] h-[38px] rounded-xl bg-c1/50 dark:bg-white/5 border border-c3/40
-          hover:bg-c1 hover:border-c4 hover:shadow-lg hover:shadow-c4/20 hover:-translate-y-0.5 transition-all flex items-center justify-center relative">
-          <Bell size={15} className="text-sidebar" />
+          className="group w-[42px] h-[42px] rounded-2xl bg-c1/50 dark:bg-white/5 border border-c3/40
+          hover:bg-white hover:border-c4 hover:shadow-xl hover:shadow-c4/10 hover:-translate-y-1 transition-all duration-500 flex items-center justify-center relative">
+          <Bell size={16} className="text-sidebar transition-transform duration-500 group-hover:rotate-12" />
           <span className="absolute top-[5px] right-[5px] w-1.5 h-1.5 bg-red-500 rounded-full
-            border border-white" />
+            border-2 border-white animate-pulse" />
         </button>
 
         <button onClick={toggleTheme}
-          className="w-[38px] h-[38px] rounded-xl bg-c1/50 dark:bg-white/5 border border-c3/40
-            hover:bg-c1 hover:border-c4 hover:shadow-lg hover:shadow-c4/20 hover:-translate-y-0.5 transition-all flex items-center justify-center">
-          {darkMode ? <Sun size={15} className="text-sidebar" /> : <Moon size={15} className="text-sidebar" />}
+          className="group w-[42px] h-[42px] rounded-2xl bg-c1/50 dark:bg-white/5 border border-c3/40
+            hover:bg-white hover:border-c4 hover:shadow-xl hover:shadow-c4/10 hover:-translate-y-1 transition-all duration-500 flex items-center justify-center">
+          {darkMode ? <Sun size={16} className="text-sidebar transition-all duration-500 group-hover:rotate-90" /> : <Moon size={16} className="text-sidebar transition-all duration-500 group-hover:-rotate-12" />}
         </button>
 
         <div 
           onClick={() => setProfileOpen(true)}
-          className="flex items-center gap-2 px-3 py-1.5 bg-c1/50 dark:bg-white/5 border border-c3/40
-          rounded-full hover:border-c4 hover:bg-c1 hover:shadow-md transition-all cursor-pointer">
-          <div className="w-[26px] h-[26px] rounded-full bg-c4 flex items-center justify-center
+          className="flex items-center gap-2 px-3 py-2 bg-c1/50 dark:bg-white/5 border border-c3/40
+          rounded-2xl hover:border-c4 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all duration-500 cursor-pointer group">
+          <div className="w-[28px] h-[28px] rounded-xl bg-c4 flex items-center justify-center
             text-sidebar text-[10px] font-extrabold">AD</div>
           <span className="text-[11px] font-bold text-sidebar dark:text-white">Admin User</span>
         </div>
