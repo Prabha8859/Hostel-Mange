@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap'); */
+
+@theme {
+  --font-outfit: 'Outfit', sans-serif;
+  
+  /* Brand Colors */
+  --color-c1: #E8FFE8;
+  --color-c2: #A7FFF3;
+  --color-c3: #74F9FE;
+  --color-c4: #00E1FF;
+  --color-sidebar: #0d2030;
+}
+
+body { font-family: 'Outfit', sans-serif; }
+
+/* Dark mode background mapping */
+.dark body {
+  background-color: #0a1a20;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-thumb { background: #74F9FE; border-radius: 4px; }
+
+.ni-active-bar::before {
+  content: '';
+  position: absolute; 
+  left: 0; 
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px; 
+  height: 55%;
+  background: #00E1FF;
+  border-radius: 0 3px 3px 0;
+}
