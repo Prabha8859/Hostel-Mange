@@ -1,13 +1,13 @@
 "use client";
 import { useState, useMemo } from "react";
-import MainLayout from "@/comonents/layout/MainLayout";
-import PageHeader from "@/comonents/ui/PageHeader";
-import StudentMiniCards from "@/comonents/students/StudentMiniCards";
-import StudentFilters from "@/comonents/students/StudentFilters";
-import StudentsTable from "@/comonents/students/StudentsTable";
-import StudentFormModal from "@/comonents/students/StudentFormModal";
-import StudentViewModal from "@/comonents/students/StudentViewModal";
-import DeleteConfirmModal from "@/comonents/students/DeleteConfirmModal";
+import MainLayout from "@/components/layout/MainLayout";
+import PageHeader from "@/components/ui/PageHeader";
+import StudentMiniCards from "@/components/students/StudentMiniCards";
+import StudentFilters from "@/components/students/StudentFilters";
+import StudentsTable from "@/components/students/StudentsTable";
+import StudentFormModal from "@/components/students/StudentFormModal";
+import StudentViewModal from "@/components/students/StudentViewModal";
+import DeleteConfirmModal from "@/components/students/DeleteConfirmModal";
 import { useStudentStore } from "@/store/useStudentStore";
 import type { Student } from "@/types/student";
 

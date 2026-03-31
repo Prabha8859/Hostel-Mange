@@ -1,6 +1,6 @@
 // app/complaints/page.tsx
-import MainLayout from "@/comonents/layout/MainLayout";
-import Table from "@/comonents/ui/Table";
+import MainLayout from "@/components/layout/MainLayout";
+import Table from "@/components/ui/Table";
 
 export default function Complaints() {
   const data = [

@@ -17,11 +17,9 @@ export const useUIStore = create<UIState>((set) => ({
   toggleSidebar: () => set((s) => ({ collapsed: !s.collapsed })),
   darkMode: false,
   toggleTheme: () =>
-    set((s) => {
-      const next = !s.darkMode;
-      document.documentElement.classList.toggle("dark", next);
-      return { darkMode: next };
-    }),
+    set((s) => ({
+      darkMode: !s.darkMode,
+    })),
   isNotificationOpen: false,
   setNotificationOpen: (open) => set({ isNotificationOpen: open }),
   isProfileOpen: false,

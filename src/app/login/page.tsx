@@ -2,8 +2,8 @@
 // app/login/page.tsx
 
 import { useRouter } from "next/navigation";
-import Button from "@/comonents/ui/Button";
-import Card from "@/comonents/ui/Card";
+import Button from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
 
 export default function Login() {
   const router = useRouter();
