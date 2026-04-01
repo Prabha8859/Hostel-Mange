@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
-import type { Student } from "@/types/student";
+import type { Student } from "../../types/student";
 import { X } from "lucide-react";
 
 type FormData = Omit<Student, "id">;

@@ -1,7 +1,7 @@
 "use client";
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
-import { useUIStore } from "@/store/useUIStore";
+import { useUIStore } from "../../store/useUIStore";
 import { useEffect } from "react";
 
 export default function MainLayout({ children }: { children: React.ReactNode }) {

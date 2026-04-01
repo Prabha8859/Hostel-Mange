@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { monthlyRevenue } from "@/data/dummyData";
+import { monthlyRevenue } from "../../data/dummyData";
 
 export default function PaymentsOverview() {
   const barRef = useRef<HTMLDivElement>(null);

@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useUIStore } from "@/store/useUIStore";
+import { useUIStore } from "../../store/useUIStore";
 import {
   LayoutDashboard, Users, DoorOpen, CreditCard,
   MessageSquare, CalendarDays, BarChart3, Settings, User,

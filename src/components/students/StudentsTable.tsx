@@ -1,7 +1,7 @@
 "use client";
-import type { Student } from "@/types/student";
-import StatusBadge from "@/components/ui/StatusBadge";
-import Avatar from "@/components/ui/Avatar";
+import type { Student } from "../../types/student";
+import StatusBadge from "../../components/ui/StatusBadge";
+import Avatar from "../../components/ui/Avatar";
 import { Eye, Pencil, Trash2 } from "lucide-react";
 
 type Props = {

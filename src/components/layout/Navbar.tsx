@@ -1,5 +1,5 @@
 "use client";
-import { useUIStore } from "@/store/useUIStore";
+import { useUIStore } from "../../store/useUIStore";
 import { Sun, Moon, Bell, Search } from "lucide-react";
 import { useState } from "react";
 import RightDrawer from "../ui/RightDrawer";

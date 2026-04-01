@@ -1,4 +1,4 @@
-import { complaints } from "@/data/dummyData";
+import { complaints } from "../../data/dummyData";
 
 const statusStyle: Record<string, string> = {
   Open:        "bg-red-50 text-red-500 border-red-200",

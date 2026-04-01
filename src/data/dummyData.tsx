@@ -1,5 +1,5 @@
 // data/dummyData.ts
-import type { Student } from "@/types/student";
+import type { Student } from "../types/student";
 
 export const students: Student[] = [
   {

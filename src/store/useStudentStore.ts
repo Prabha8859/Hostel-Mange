@@ -1,7 +1,7 @@
 "use client";
 import { create } from "zustand";
-import { students as initialStudents } from "@/data/dummyData";
-import type { Student } from "@/types/student";
+import { students as initialStudents } from "../data/dummyData";
+import type { Student } from "../types/student";
 
 type StudentStore = {
   students: Student[];

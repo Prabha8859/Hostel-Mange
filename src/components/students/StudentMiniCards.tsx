@@ -1,5 +1,5 @@
 "use client";
-import type { Student } from "@/types/student";
+import type { Student } from "../../types/student";
 
 type Props = { students: Student[] };
 
