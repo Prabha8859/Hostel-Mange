@@ -3,8 +3,8 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import Button from "../../components/ui/Button";
-import Card from "../../components/ui/Card";
+import Button from "@/components/ui/Button";
+import Card from "@/components/ui/Card";
 
 export default function Login() {
   const router = useRouter();

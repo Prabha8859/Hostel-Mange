@@ -1,5 +1,5 @@
 "use client";
-import type { Student } from "../../types/student";
+import type { Student } from "@/types/student";
 import { Trash2 } from "lucide-react";
 
 type Props = {

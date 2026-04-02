@@ -1,4 +1,4 @@
-import { recentActivity } from "../../data/dummyData";
+import { recentActivity } from "@/data/dummyData";
 
 const bgMap: Record<string, string> = {
   student: "bg-c4/10", payment: "bg-emerald-50", complaint: "bg-amber-50", room: "bg-c3/15",

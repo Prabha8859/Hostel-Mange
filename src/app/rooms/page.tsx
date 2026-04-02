@@ -1,6 +1,6 @@
 // app/rooms/page.tsx
-import MainLayout from "../../components/layout/MainLayout";
-import Table from "../../components/ui/Table";
+import MainLayout from "@/components/layout/MainLayout";
+import Table from "@/components/ui/Table";
 
 export default function Rooms() {
   const data = [

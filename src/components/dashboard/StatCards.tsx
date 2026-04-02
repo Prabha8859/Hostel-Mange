@@ -1,4 +1,4 @@
-import { dashboardStats } from "../../data/dummyData";
+import { dashboardStats } from "@/data/dummyData";
 
 const cards = [
   { label: "Total Students",    key: "totalStudents",    icon: "👨‍🎓", sub: "↑ +3 this week",    subColor: "text-green-500",  accent: "bg-c4/10"      },

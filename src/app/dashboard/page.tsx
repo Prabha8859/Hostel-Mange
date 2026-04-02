@@ -1,10 +1,10 @@
-import MainLayout from "../../components/layout/MainLayout";
-import StatCards from "../../components/dashboard/StatCards";
-import RoomStatus from "../../components/dashboard/RoomStatus";
-import RecentActivity from "../../components/dashboard/RecentActivity";
-import PaymentsOverview from "../../components/dashboard/PaymentsOverview";
-import ComplaintsPanel from "../../components/dashboard/ComplaintsPanel";
-import QuickActions from "../../components/dashboard/QuickActions";
+import MainLayout from "@/components/layout/MainLayout";
+import StatCards from "@/components/dashboard/StatCards";
+import RoomStatus from "@/components/dashboard/RoomStatus";
+import RecentActivity from "@/components/dashboard/RecentActivity";
+import PaymentsOverview from "@/components/dashboard/PaymentsOverview";
+import ComplaintsPanel from "@/components/dashboard/ComplaintsPanel";
+import QuickActions from "@/components/dashboard/QuickActions";
 
 export default function DashboardPage() {
   const today = new Intl.DateTimeFormat("en-IN", {

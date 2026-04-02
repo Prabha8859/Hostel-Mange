@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { rooms, type RoomStatus } from "../../data/dummyData";
+import { rooms, type RoomStatus } from "@/data/dummyData";
 
 const tagMap: Record<RoomStatus, string> = {
   full: "Full", available: "Open", partial: "1 Left",
