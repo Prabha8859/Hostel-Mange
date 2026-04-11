@@ -7,6 +7,7 @@ type Props = {
   viewMode: ViewMode;
   occupancyPctFilter: number; // New prop for occupancy percentage
   onSearch: (v: string) => void; onStatus: (v: string) => void;
+  onOccupancyPct: (v: number) => void;
   onCap: (v: string) => void; onFloor: (v: string) => void;
   onViewMode: (v: ViewMode) => void;
   count: number; total: number;
@@ -18,6 +19,7 @@ const selCls = `px-3 py-2 bg-white dark:bg-white/5 border-[1.5px] border-c3/30
 
 export default function RoomFilters({
   search, statusFilter, capFilter, floorFilter, viewMode,
+  occupancyPctFilter, onOccupancyPct,
   onSearch, onStatus, onCap, onFloor, onViewMode, count, total,
 }: Props) {
   return (

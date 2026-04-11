@@ -11,7 +11,7 @@ import RoomViewModal from "@/components/rooms/RoomViewModal";
 import DeleteConfirmModal from "@/components/students/DeleteConfirmModal";
 import { useRoomStore } from "@/store/useRoomStore";
 import type { Room, ViewMode } from "@/types/room";
-import { getRoomStatus } from "@/types/room";
+import { getRoomStatus, getOccupancyPct } from "@/types/room";
 
 export default function RoomsPage() {
   const { rooms, addRoom, updateRoom, deleteRoom } = useRoomStore();
